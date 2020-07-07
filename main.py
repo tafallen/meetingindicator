@@ -4,10 +4,6 @@ import lcd
 import infologging
 import sys
 import time
-import http
-
-from http.client import HTTPException
-
 
 def update_meeting_display(LCD, meeting_state):
     infologging.log_message('main.update_meeting_display: ' + str(meeting_state))
