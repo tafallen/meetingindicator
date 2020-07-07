@@ -26,9 +26,7 @@ def main_loop(LCD):
     x = keypad.process_input(LCD)
     if x != None:
         meeting_state = x
-    meeting_state = keypad.process_input(LCD)
-    
-    update_meeting_display(LCD, meeting_state)
+        update_meeting_display(LCD, meeting_state)
 
 
 def main():
