@@ -2,9 +2,7 @@ import display
 import keypad
 import lcd
 import infologging
-import settings
 import sys
-import thermostat
 import time
 import http
 
