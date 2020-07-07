@@ -24,8 +24,6 @@ def init_gpio():
     GPIO.setup(KEY3_PIN,        GPIO.IN, pull_up_down=GPIO.PUD_UP) # Input with pull-up
 
 def process_input(LCD):
-    infologging.log_message('process_input')
-
     # if GPIO.input(KEY_UP_PIN) == 0: 
     # if GPIO.input(KEY_LEFT_PIN) == 0:
     # if GPIO.input(KEY_RIGHT_PIN) == 0:
