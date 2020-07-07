@@ -21,9 +21,7 @@ def init():
     return lcd.init()
 
 def main_loop(LCD):
-
-    result = keypad.process_input(LCD)
-    meeting_state = False
+    meeting_state = keypad.process_input(LCD)
     
     update_meeting_display(LCD, meeting_state)
 
