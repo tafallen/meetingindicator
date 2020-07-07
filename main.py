@@ -20,7 +20,12 @@ def init():
     keypad.init_gpio()
     return lcd.init()
 
+meeting_state = False
+
 def main_loop(LCD):
+    x = keypad.process_input(LCD)
+    if x != None:
+        meeting_state = x
     meeting_state = keypad.process_input(LCD)
     
     update_meeting_display(LCD, meeting_state)
@@ -31,7 +36,7 @@ def main():
     LCD = init()
 
     counter = 0
-    update_meeting_display(LCD, False)
+    update_meeting_display(LCD, meeting_state)
 
     while(1):
         main_loop(LCD)
