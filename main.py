@@ -10,7 +10,7 @@ from http.client import HTTPException
 
 
 def update_meeting_display(LCD, meeting_state):
-    infologging.log_message('main.update_meeting_display: ' + meeting_state)
+    infologging.log_message('main.update_meeting_display: ' + str(meeting_state))
     image = display.get_updated_display((128, 128),meeting_state)
     lcd.show_image(LCD, image)
 
