@@ -9,7 +9,7 @@ def __draw_meeting_display(panel_size, meeting_state):
     elif meeting_state == 0:
         return Image.new("RGB", panel_size, 'Green')
 
-    return Image.new("RGB", panel_size, 'Amber')
+    return Image.new("RGB", panel_size, 'Yellow')
 
 def get_updated_display(panel_size, meeting_state):
     infologging.log_message('get_updated_display: ' + str(meeting_state))
