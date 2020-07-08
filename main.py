@@ -16,7 +16,7 @@ def init():
     keypad.init_gpio()
     return lcd.init()
 
-meeting_state = False
+meeting_state = 0
 
 def main_loop(LCD):
     x = keypad.process_input(LCD)

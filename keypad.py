@@ -32,8 +32,10 @@ def process_input(LCD):
     # if GPIO.input(KEY2_PIN) == 0: 
         
     if GPIO.input(KEY1_PIN) == 0:
-        return True
+        return 1
         
-        
+    if GPIO.input(KEY2_PIN) == 0:
+        return 2 
+    
     if GPIO.input(KEY3_PIN) == 0:
-        return False
+        return 0
